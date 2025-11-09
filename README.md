@@ -138,15 +138,8 @@ Project Structure (high level)
   - main.jsx
 - public/          → static files
 
-Common Issues & Debugging
--------------------------
-- Contact stuck on "Sending...": open browser console/network. Look for EmailJS errors (missing public key, wrong IDs).
-- Environment variables not available: restart dev server and confirm names start with `VITE_`.
-- 3D canvas performance: hide EarthCanvas on small screens via `hidden md:block` if necessary.
 
 Contact
 -------
 - Email: jatinmotwnai17@gmail.com
 - LinkedIn: https://www.linkedin.com/in/jatin-motwani-?utm_source=share
-
-Add any badges (build, license, demo) at the top as needed.
