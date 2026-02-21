@@ -4,7 +4,9 @@ import { SiGmail } from "react-icons/si";
 
 const Footer = () => {
   return (
-<footer className="fixed bottom-0 left-0 w-full py-4 bg-black-100/55 text-white flex justify-center gap-6 z-50">      <a
+    <footer className="fixed bottom-0 left-0 w-full py-4 bg-black-100/55 text-white flex justify-center gap-6 z-50">
+      {" "}
+      <a
         href="mailto:jatinmotwnai17@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
