@@ -111,7 +111,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Frontend Developer Intern",
+    title: "Web Developer Intern",
     company_name: "MindefyTech",
     icon: MindefyTech,
     iconBg: "#383E56",
