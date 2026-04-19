@@ -37,12 +37,30 @@ const Tech = () => {
     <section>
       <div className="tech-icons-wrapper flex flex-row flex-wrap justify-center gap-10">
         {technologies.map((technology) => (
-          <div className="w-28 h-28" key={technology.name}>
-            <img
-              src={technology.icon}
-              alt={technology.name}
-              className="tech-icon w-full h-full object-contain"
-            />
+          <div
+            className="w-28 h-28"
+            key={technology.name}
+            title={technology.name}
+            aria-label={technology.name}
+          >
+            {technology.Icon ? (
+              <technology.Icon
+                className="tech-icon w-full h-full text-white"
+                style={{ width: "100%", height: "100%" }}
+              />
+            ) : technology.label ? (
+              <div
+                className={`tech-icon w-full h-full flex items-center justify-center rounded-2xl text-[22px] font-black ${technology.badgeClassName ?? "bg-tertiary text-white"}`}
+              >
+                {technology.label}
+              </div>
+            ) : (
+              <img
+                src={technology.icon}
+                alt={technology.name}
+                className="tech-icon w-full h-full object-contain"
+              />
+            )}
           </div>
         ))}
       </div>

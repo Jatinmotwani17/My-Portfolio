@@ -31,6 +31,9 @@ import {
   secondTestimonial,
   thirdTestimonial,
 } from "../assets";
+import postgresql from "../assets/tech/postgresql.png";
+import powerbi from "../assets/tech/powerbi.svg";
+import { SiNextdotjs, SiTableau } from "react-icons/si";
 
 // Import Tekisky separately
 import MindefyTech from "../assets/company/MindefyTech.png";
@@ -106,6 +109,22 @@ const technologies = [
   {
     name: "git",
     icon: git,
+  },
+  {
+    name: "Next.js",
+    Icon: SiNextdotjs,
+  },
+  {
+    name: "Tableau",
+    Icon: SiTableau,
+  },
+  {
+    name: "Power BI",
+    icon: powerbi,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
   },
 ];
 
